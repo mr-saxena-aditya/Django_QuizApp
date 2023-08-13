@@ -4,6 +4,9 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login as auth_login, authenticate, logout
 from .models import Question
 from django.contrib.auth.decorators import login_required
+from .models import Question, QuizResult
+from django.utils import timezone
+
 
 def question_list(request):
     questions = Question.objects.all()
@@ -15,6 +18,8 @@ def quiz(request):
     random_questions = random.sample(list(questions), 5)
     return render(request, 'quiz.html', {'questions': random_questions})
 
+
+@login_required(login_url='/login/')
 def quiz_result(request):
     if request.method == 'POST':
         user_score = 0
@@ -37,11 +42,16 @@ def quiz_result(request):
                 'correct_choice': correct_choice,
             })
 
+        # Create and save a new QuizResult object
+        quiz_result = QuizResult(user=request.user, score=user_score, timestamp=timezone.now())
+        quiz_result.save()
+
         return render(request, 'quiz_result.html', {'user_score': user_score, 'question_results': question_results})
     else:
         # Fetch 5 random questions from the database
         random_questions = random.sample(list(Question.objects.all()), 5)
         return render(request, 'quiz_result.html', {'random_questions': random_questions})
+
 
 def homepage(request):
     return render(request, 'homepage.html')
