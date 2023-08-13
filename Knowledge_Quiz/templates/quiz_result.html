@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Quiz Results{% endblock %}
+
+{% block content %}
+{% if question_results %}
+    <h2>Your Quiz Results</h2>
+    <p>Your score: {{ user_score }} out of {{ question_results|length }}</p>
+    <ul>
+        {% for result in question_results %}
+            <li>
+                <strong>Question:</strong> {{ result.question_text }}<br>
+                <strong>Your Choice:</strong> {{ result.user_choice }}<br>
+                <strong>Correct Choice:</strong> {{ result.correct_choice }}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No results to display.</p>
+{% endif %}
+{% endblock %}
