@@ -9,24 +9,23 @@
         <h4>{{ question.question_text }}</h4>
         <ul class="list-group">
             <li class="list-group-item">
-                <input type="radio" name="question_{{ question.id }}" value="1">
+                <input type="radio" name="question_{{ question.id }}" value="1" required>
                 {{ question.choice1 }}
             </li>
             <li class="list-group-item">
-                <input type="radio" name="question_{{ question.id }}" value="2">
+                <input type="radio" name="question_{{ question.id }}" value="2" required>
                 {{ question.choice2 }}
             </li>
             <li class="list-group-item">
-                <input type="radio" name="question_{{ question.id }}" value="3">
+                <input type="radio" name="question_{{ question.id }}" value="3" required>
                 {{ question.choice3 }}
             </li>
             <li class="list-group-item">
-                <input type="radio" name="question_{{ question.id }}" value="4">
+                <input type="radio" name="question_{{ question.id }}" value="4" required>
                 {{ question.choice4 }}
             </li>
         </ul>
     {% endfor %}
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
 {% endblock %}

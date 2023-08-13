@@ -5,18 +5,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <!-- Your navigation menu here -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="{% url 'homepage' %}">
+            Django! Quiz App
+        </a>
+        <span class="navbar-text">
+            {% if user.is_authenticated %}
+                Welcome, {{ user.username }}!
+                <a class="btn btn-link text-light" href="{% url 'logout' %}">Logout</a>
+                <a class="btn btn-link text-light" href="{% url 'quiz' %}">Go to Quiz</a>
+            {% else %}
+                <a class="btn btn-link text-light" href="{% url 'login' %}">Login</a>
+                <a class="btn btn-link text-light" href="{% url 'register' %}">Register</a>
+            {% endif %}
+        </span>
     </nav>
     
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <div class="page-header">
-                    <h1>
-                        Django! Knowledge Quiz App
-                    </h1>
-                </div>
+            <div class="col-md-12">          
                 <div class="jumbotron">
                     {% block content %}{% endblock %}
                 </div>

@@ -23,3 +23,4 @@ class Question(models.Model):
         if choice_field_name:
             return getattr(self, choice_field_name)
         return None
+
