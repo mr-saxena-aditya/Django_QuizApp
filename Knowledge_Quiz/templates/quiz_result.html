@@ -6,6 +6,17 @@
 {% if question_results %}
     <h2>Your Quiz Results</h2>
     <p>Your score: {{ user_score }} out of {{ question_results|length }}</p>
+    <p>
+        {% if user_score < 3 %}
+            "Please try again!" for a lower score
+            <br/><br/>
+            <a href="{% url 'quiz' %}" class="btn btn-primary">Start a New Quiz</a>
+        {% elif user_score == 5 %}
+            "You are a Genius!"
+        {% endif %}
+        <hr>
+    </p>
+    
     <ul>
         {% for result in question_results %}
             <li>
@@ -18,5 +29,5 @@
 {% else %}
     <p>No results to display.</p>
 {% endif %}
-    <a href="{% url 'quiz' %}" class="btn btn-primary">Start a New Quiz</a>
+
 {% endblock %}

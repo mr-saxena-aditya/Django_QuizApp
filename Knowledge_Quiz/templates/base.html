@@ -13,7 +13,6 @@
             {% if user.is_authenticated %}
                 Welcome, {{ user.username }}!
                 <a class="btn btn-link text-light" href="{% url 'logout' %}">Logout</a>
-                <a class="btn btn-link text-light" href="{% url 'quiz' %}">Go to Quiz</a>
             {% else %}
                 <a class="btn btn-link text-light" href="{% url 'login' %}">Login</a>
                 <a class="btn btn-link text-light" href="{% url 'register' %}">Register</a>
