@@ -16,7 +16,7 @@ The Knowledge Quiz Web Application is a feature-rich educational platform design
 - Users initiate quizzes, selecting a set of questions at random from the database.
 - After quiz completion, scores are calculated and personalized feedback is provided.
 - Scores are presented as a percentage along with performance-based messages.
-
+go
 ### Result Tracking:
 - Quiz results are stored in the database for each user.
 - Users can review their past performances and access their average, highest, and lowest scores.
@@ -50,7 +50,7 @@ The Knowledge Quiz Web Application, developed using Django, offers a dynamic pla
         <li>Navigate to the Project Root Folder using the command line</li>
         <li>Run the following command through the command line: <code>python manage.py runserver</code></li>
         <li>
-            <ul>
+            <ul> ADMIN CREDENTIALS
                 <li>Username: superuser</li>
                 <li>Password: superpassword</li>
             </ul>
