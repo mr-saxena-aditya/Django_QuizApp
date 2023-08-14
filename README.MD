@@ -1,4 +1,4 @@
-# Project Summary: Knowledge Quiz Web Application using Django
+# Project Summary: Knowledge Quiz Web Application using Django and Twitter Bootstrap
 
 The Knowledge Quiz Web Application is a feature-rich educational platform designed to test users' knowledge on various topics. Developed using the Django framework and Python, the application offers engaging quizzes, result tracking, and a user-friendly interface. The project aims to enhance learning and challenge users' understanding through interactive quizzes and insightful performance analysis.
 
@@ -41,3 +41,20 @@ The Knowledge Quiz Web Application is a feature-rich educational platform design
 
 ## Conclusion:
 The Knowledge Quiz Web Application, developed using Django, offers a dynamic platform for users to test their knowledge and improve their understanding on a chosen topic. With user accounts, interactive quizzes, performance analysis, and result tracking, the application provides an engaging and educational experience. The combination of Django's powerful features, well-designed templates, and user-friendly interface makes it a compelling tool for both learning and assessment.
+
+<h2>Important Information</h2>
+<p>
+    <ol>
+        <li>Install Django and Python on your system</li>
+        <li>Download the folder and unzip.</li>
+        <li>Navigate to the Project Root Folder using the command line</li>
+        <li>Run the following command through the command line: <code>python manage.py runserver</code></li>
+        <li>
+            <ul>
+                <li>Username: superuser</li>
+                <li>Password: superpassword</li>
+            </ul>
+        </li>
+    </ol>
+</p>
+
