@@ -42,61 +42,42 @@ go
 ## Conclusion:
 The Knowledge Quiz Web Application, developed using Django, offers a dynamic platform for users to test their knowledge and improve their understanding on a chosen topic. With user accounts, interactive quizzes, performance analysis, and result tracking, the application provides an engaging and educational experience. The combination of Django's powerful features, well-designed templates, and user-friendly interface makes it a compelling tool for both learning and assessment.
 
-<h2>Getting Started</h2>
-    <p>Follow these steps to set up and run the Knowledge Quiz Web Application on your local machine:</p>
+# Getting Started
 
-    <h3>Prerequisites</h3>
-    <ul>
-        <li>Python (3.6 or higher)</li>
-        <li>Django (3.1 or higher)</li>
-    </ul>
+Follow these steps to set up and run the Knowledge Quiz Web Application on your local machine:
 
-    <h3>Installation</h3>
-    <ol>
-        <li>Clone the repository to your local machine:</li>
-    </ol>
-    <pre><code>git clone https://github.com/your-username/your-repo-name.git</code></pre>
+## Prerequisites
 
-    <ol start="2">
-        <li>Navigate to the project directory:</li>
-    </ol>
-    <pre><code>cd KnowledgeQuiz</code></pre>
+- Python (3.6 or higher)
+- Django (3.1 or higher)
 
-    <ol start="3">
-        <li>Install the project dependencies using pip:</li>
-    </ol>
-    <pre><code>pip install -r requirements.txt</code></pre>
+## Installation
 
-    <h3>Usage</h3>
-    <ol>
-        <li>Apply the database migrations:</li>
-    </ol>
-    <pre><code>python manage.py migrate</code></pre>
+1. Clone the repository to your local machine:
 
-    <ol start="2">
-        <li>Create a superuser account to access the admin panel:</li>
-    </ol>
-    <pre><code>python manage.py createsuperuser</code></pre>
+git clone https://github.com/mr-saxena-aditya/Django_QuizApp.git
 
-    <ol start="3">
-        <li>Start the development server:</li>
-    </ol>
-    <pre><code>python manage.py runserver</code></pre>
+2. Navigate to the project directory:
 
-    <ol start="4">
-        <li>Open your web browser and navigate to <a href="http://127.0.0.1:8000/admin/">http://127.0.0.1:8000/admin/</a> to access the admin panel and manage questions and quiz results.</li>
-    </ol>
+3. Install the project dependencies using pip:
 
-    <ol start="5">
-        <li>To access the user interface, navigate to <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> in your web browser.</li>
-    </ol>
+2. Create a superuser account to access the admin panel or use the following username and password: 
+- Username : superuser
+- Password : superpassword
 
-    <ol start="6">
-        <li>Register or log in to start taking quizzes and exploring the application.</li>
-    </ol>
+3. Start the development server:
 
-    <h3>Credits</h3>
-    <p>This project is developed by <a href="https://github.com/your-username">Your Name</a>.</p>
+4. Open your web browser and navigate to [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) to access the admin panel and manage questions and quiz results.
 
-    <h3>License</h3>
-    <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+5. To access the user interface, navigate to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your web browser.
+
+6. Register or log in to start taking quizzes and exploring the application.
+
+## Credits
+
+This project is developed by Aditya Saxena (https://github.com/mr-saxena-aditya).
+
+## License
+
+This project is licensed under the MIT License
+
