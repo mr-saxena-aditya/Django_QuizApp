@@ -10,70 +10,69 @@
     <p class="lead">Test your knowledge with our fun and challenging quizzes.</p>
     <hr class="my-4">
     <p>Are you ready to take the quiz?</p>
-    <a class="btn btn-primary btn-lg" href="{% url 'quiz' %}" role="button">Go to Quiz</a>
+    <a class="btn btn-prgitimary btn-lg" href="{% url 'quiz' %}" role="button">Go to Quiz</a>
   {% else %}
   <div class="jumbotron">
-    <h1 class="display-4">Project Summary: Knowledge Quiz Web Application using Django</h1>
-    <p class="lead">Objective: Create a feature-rich web application using Django and Python to test users' knowledge on a chosen topic. The application will feature user accounts, randomly selected quizzes, result tracking, and score analysis.</p>
-    <h2 class="mt-4">Key Features:</h2>
+    <div class="container mt-5">
+        <h1>Project Summary: Knowledge Quiz Web Application using Django</h1>
+        <p>The Knowledge Quiz Web Application is a feature-rich educational platform designed to test users' knowledge on various topics. Developed using the Django framework and Python, the application offers engaging quizzes, result tracking, and a user-friendly interface. The project aims to enhance learning and challenge users' understanding through interactive quizzes and insightful performance analysis.</p>
 
-    <h4>User Authentication:</h4>
-    <ul>
-        <li>Users can create new accounts or log in to existing ones.</li>
-        <li>Django's built-in User model handles account creation and management.</li>
-    </ul>
+        <h2>Key Features:</h2>
+        <h3>User Authentication:</h3>
+        <ul>
+            <li>Users can register new accounts or log in using existing credentials.</li>
+            <li>Django's built-in User model handles account creation and management.</li>
+        </ul>
 
-    <h4>Question Management:</h4>
-    <ul>
-        <li>Questions are stored in a database, each with four possible choices and one correct answer.</li>
-        <li>A Question model ensures consistency and coherence in quizzes.</li>
-    </ul>
+        <h3>Question Management:</h3>
+        <ul>
+            <li>Questions are stored in a database, each with multiple choices and a correct answer.</li>
+            <li>A Question model ensures consistency and coherence in quizzes.</li>
+        </ul>
 
-    <h4>Quiz Functionality:</h4>
-    <ul>
-        <li>Users initiate quizzes, selecting five questions at random from the database.</li>
-        <li>After quiz completion, scores are calculated, and personalized feedback is displayed.</li>
-        <li>Scores range from 0% to 100%, accompanied by performance-based messages.</li>
-    </ul>
+        <h3>Quiz Functionality:</h3>
+        <ul>
+            <li>Users initiate quizzes, selecting a set of questions at random from the database.</li>
+            <li>After quiz completion, scores are calculated and personalized feedback is provided.</li>
+            <li>Scores are presented as a percentage along with performance-based messages.</li>
+        </ul>
 
-    <h4>Result Tracking:</h4>
-    <ul>
-        <li>Quiz results are stored in the database for each user.</li>
-        <li>Users can review past performances and see their average, highest, and lowest scores.</li>
-    </ul>
+        <h3>Result Tracking:</h3>
+        <ul>
+            <li>Quiz results are stored in the database for each user.</li>
+            <li>Users can review their past performances and access their average, highest, and lowest scores.</li>
+        </ul>
 
-    <h4>Retake Option:</h4>
-    <ul>
-        <li>Users with scores below 50% can retake the quiz to improve their performance.</li>
-    </ul>
+        <h3>Retake Option:</h3>
+        <ul>
+            <li>Users who score below a threshold can retake quizzes to improve their performance.</li>
+        </ul>
 
-    <h4>Suggested Framework Implementation:</h4>
-    <ul>
-        <li>Django Models: User, Question, Quiz.</li>
-        <li>Django Views: RegisterView, LoginView, QuizView, ScoreView.</li>
-        <li>Django Templates: register.html, login.html, quiz.html, score.html, base.html.</li>
-        <li>Django Forms: UserRegisterForm, UserLoginForm.</li>
-        <li>Django Middleware: AuthenticationMiddleware.</li>
-    </ul>
+        <h3>Admin Panel Integration:</h3>
+        <ul>
+            <li>The admin panel allows administrators to manage questions and view quiz results.</li>
+            <li>QuizResult objects are stored with user scores and timestamps.</li>
+        </ul>
 
-    <h4>Design and Presentation:</h4>
-    <ul>
-        <li>The application features an easy-to-use interface with well-designed templates.</li>
-        <li>The use of CSS for styling and optional JavaScript for interactivity enhances user experience.</li>
-    </ul>
+        <h3>Design and Presentation:</h3>
+        <ul>
+            <li>The application boasts a user-friendly interface with appealing and consistent design elements.</li>
+            <li>CSS styling and optional JavaScript elements enhance the overall user experience.</li>
+        </ul>
 
-    <h2 class="mt-4">Evaluation Criteria:</h2>
-    <ul>
-        <li>Presentation: Clear and effective presentation of the project's objectives and features.</li>
-        <li>Specification: Implementation of the specified features and functionalities.</li>
-        <li>Navigation: User-friendly navigation between different sections and functionalities.</li>
-        <li>Design: Attractive and consistent design elements throughout the application.</li>
-        <li>Individual Involvement: Demonstrated understanding and contribution of each team member.</li>
-    </ul>
+        <h2>Evaluation Criteria:</h2>
+        <ul>
+            <li><strong>Presentation:</strong> Clear and effective communication of project objectives and features.</li>
+            <li><strong>Specification:</strong> Successful implementation of the specified functionalities.</li>
+            <li><strong>Navigation:</strong> Intuitive navigation between sections and functionalities for a seamless user experience.</li>
+            <li><strong>Design:</strong> Consistent and visually appealing design elements throughout the application.</li>
+            <li><strong>Individual Involvement:</strong> Demonstrated understanding and contribution of each team member.</li>
+        </ul>
 
-    <h2 class="mt-4">Conclusion:</h2>
-    <p>The Knowledge Quiz Web Application built using Django offers a seamless user experience for testing knowledge on a chosen topic. It provides a platform for users to register, take quizzes, view results, and improve their performance. The combination of Django's powerful features, well-designed templates, and user-friendly interface ensures a compelling and educational web application.</p>
-</div>
+        <h2>Conclusion:</h2>
+        <p>The Knowledge Quiz Web Application, developed using Django, offers a dynamic platform for users to test their knowledge and improve their understanding on a chosen topic. With user accounts, interactive quizzes, performance analysis, and result tracking, the application provides an engaging and educational experience. The combination of Django's powerful features, well-designed templates, and user-friendly interface makes it a compelling tool for both learning and assessment.</p>
+    </div>
+   </div>
 
   {% endif %}
 </div>
